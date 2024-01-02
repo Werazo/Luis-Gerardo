@@ -1,0 +1,321 @@
+html{
+    min-width: 450px;
+}
+
+/*NavBar*/
+.navbar{
+    padding: 1.5 rem;
+    background: rgb(235, 250, 250)
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand{
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+/*General*/
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+.seccion_obscura{
+    background: rgb(8, 33, 54);
+    color: white;
+}
+
+.seccion-clara{
+    background: white;
+    color: rgb(8, 33, 54);
+}
+
+.seccion_titulo{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+.seccion_texto{
+    font-size: 1.2rem;
+    padding: 0px 35px;
+}
+
+.seccion-descripcion{
+    font-size: 1.2rem;
+    color: rgb(58, 58, 58);
+}
+
+.texto-negro{
+    color: black;
+}
+
+.texto-blanco{
+    color: white;
+}
+
+/*Seccion Hero*/
+.hero{
+    background: rgb(235, 250, 250);
+    min-width: 450px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.hero-principal{
+    padding: 3rem;
+}
+.hero-principal h2{
+    font-size: 1.5rem;
+    color: rgb(43, 71, 72);
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+#FotoPerfil{
+    width: 150px;
+    border-radius: 100%;
+}
+
+.hero-inferior-img{
+    @media screen and (min-width: 767px) {
+        max-width: 600px;
+    }
+}
+
+/*Sobre mi*/
+.sobre-mi{
+    box-sizing: border-box;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
+}
+
+.sobre-mi .contenedor{
+    width: 90%;
+    text-align: center;
+}
+
+/*Experiencia*/
+.experiencia{
+    padding: 40px 40px 60px 40px;
+}
+
+.experiencia .columna{
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.experiencia .columna:hover{
+    color: rgb(42, 170, 255);
+    background-color: rgb(61, 61, 61);
+}
+
+.experiencia .list-group .list-group-item{
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(129, 128, 128);
+}
+
+.experiencia-titulo{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.experiencia i{
+    font-size: 2.5rem;
+    color: rgb(8, 142, 196);
+    background: rgb(61, 61, 61);
+    border-radius: 100%;
+    padding: 4px 10px;
+}
+
+.badges-contenedor{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.badges{
+    margin: 5px;
+}
+
+.badge{
+    margin: 2px;
+}
+
+/*Portafolio*/
+.proyectos-recientes{
+    padding: 40px;
+    align-items: center;
+}
+
+.proyectos-recientes img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.proyectos-contenedor{
+    padding-top: 60px;
+    margin-bottom: 30px;
+}
+
+.overlay{
+    transition: all 0.3s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay p{
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.overlay .iconos-contenedor{
+    display: flex;
+}
+
+.overlay i{
+    color: black;
+    font-size: 40px;
+    margin: 10px;
+}
+
+.overlay i:hover{
+    color: rgb(224, 170, 54); 
+}
+
+.proyecto{
+    position: relative;
+    height: 100%;
+}
+
+.proyecto:hover img{
+    opacity: 0.2;
+}
+
+.proyecto:hover .overlay{
+    opacity: 1;
+}
+
+/*Contacto*/
+.contacto{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.margen{
+    margin-top: 150px;
+}
+
+.contacto .container{
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.contacto .rectangulo{
+    margin-top: -5rem;
+    background-color: rgb(6, 228, 91);
+    box-shadow: 0px 1px 4px 1px rgb(18, 99, 79);
+    border-radius: 10px;
+}
+
+.contacto .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .descricion{
+    color: aliceblue;
+    font-size: 1.2 rem;
+}
+
+
+.contacto button{
+    color: aliceblue;
+    border-radius: 100px;
+    background-color: transparent;
+    border: solid 1.5px;
+    border-color: aliceblue;
+    padding: 2.25em 2em;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.bi-envelope-fill{
+    margin: 6px;
+}
+
+.contacto button:hover{
+    color: rgb(8, 33, 54);
+    border-radius: 5px;
+    background-color: aliceblue;
+    border: solid 1.5px;
+    font-weight: bold;
+    border-radius: 100px;
+}
+
+/*Pie de pagina*/
+footer{
+    box-sizing: border-box;
+    border-color: transparent;
+}
+
+.footer-icono{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+.footer-texto{
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: "Manrope", sans-serif;
+}
+
+.RedSocial{
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid white;
+    color: aliceblue;
+    border-radius: 50%;
+    transition: all 0.25s ease-in-out;
+    font-size: 20px;
+}
+
+.RedSocial:hover{
+    background-color: rgb(189, 222, 250);
+    color: rgb(8, 33, 54);
+    font-size: 22px;
+}
+.autor{
+    padding: 20px;
+    color: rgb(190, 190, 190);
+    font-size: 14px;
+}
